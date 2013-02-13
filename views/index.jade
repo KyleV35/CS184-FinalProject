@@ -4,5 +4,37 @@ block title
   title Frolic
 
 block content
-  div.row.landing
-    h1.text-center Hello, this is Frolic!
+  div.row#landing
+    div.container
+        h1.landing-title
+          | Frolic
+        div.landing-description 
+          | Frolic helps you find people around you by answering silly questions in
+          | a ten second video!
+        div.center-descendants
+          a.btn.btn-primary.btn-large.center(href="#")
+            | Login With Facebook!
+  div.row#instructions
+    div.container
+      div.span4.instruction
+        h2.instruction-header
+          | Instruction 1
+        div.instruction-details
+          img(src="/images/placeholder.png")
+          span.instruction-description 
+            | Sign-up on Facebook!
+      div.span4.instruction
+        h2.instruction-header
+          | Instruction 2
+        div.instruction-details
+          img(src="/images/placeholder.png")
+          span.instruction-description 
+            | Make a video!
+      div.span4.instruction
+        h2.instruction-header
+          | Instruction 3
+        div.instruction-details
+          img(src="/images/placeholder.png")
+          span.instruction-description 
+            | Enjoy finding others' videos
+    
