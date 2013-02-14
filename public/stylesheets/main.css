@@ -48,6 +48,10 @@
 #footer-content {
   margin: auto;
   display: table;
+}
+#footer-info-content {
+  margin: auto;
+  display: table;
   border-top: 1px #333333 solid;
 }
 footer {

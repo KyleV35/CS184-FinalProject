@@ -2,8 +2,10 @@ function login() {
     FB.login(function(response) {
         if (response.authResponse) {
             // connected
+            console.log("Logged In!");
         } else {
             // cancelled
+            console.log("Back Log In");
         }
     });
 }
@@ -32,13 +34,12 @@ window.fbAsyncInit = function() {
             testAPI();
         } else if (response.status === 'not_authorized') {
             // not_authorized
-            login();
         } else {
             // not_logged_in
-            login();
     }
  });
 };
+
 // Load the SDK Asynchronously
 (function(d){
     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];

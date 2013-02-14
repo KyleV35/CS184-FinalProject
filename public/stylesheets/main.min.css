@@ -6,7 +6,8 @@
 .instruction-description{display:inline-block;width:100px;vertical-align:middle;}
 .instruction-image{display:inline-block;vertical-align:top;padding-right:15px;}
 .footer-column{display:inline-block;width:250px;vertical-align:top;}
-#footer-content{margin:auto;display:table;border-top:1px #333333 solid;}
+#footer-content{margin:auto;display:table;}
+#footer-info-content{margin:auto;display:table;border-top:1px #333333 solid;}
 footer{background-color:#006699;padding-top:20px;padding-bottom:50px;}
 .footer-link,.footer-link:visited{color:#69d6ff;}
 ul{list-style-type:none;margin-left:none;}

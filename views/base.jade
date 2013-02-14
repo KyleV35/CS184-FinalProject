@@ -1,11 +1,8 @@
 doctype 5
-html
+html(xmlns='http://www.w3.org/1999/xhtml', xmlns:fb='http://ogp.me/ns/fb#')
   head
     block title
       title Default title
-    block scripts
-      script(src='/javascripts/jquery-1.9.1.min.js')
-      script(src='/javascripts/bootstrap.min.js')
     block stylesheets
       link(rel='stylesheet', href='/stylesheets/bootstrap.min.css') 
       link(rel='stylesheet', href='/stylesheets/main.min.css')
@@ -17,19 +14,29 @@ html
       footer
         div.container
           div#footer-content
-            div.footer-column
-              ul
-                li
-                  a.footer-link(href="#") About
-            div.footer-column
-              ul
-                li
-                  a.footer-link(href="#") Facebook
-                li
-                  a.footer-link(href="#") Twitter
-                li
-                  a.footer-link(href="#") Blog
-            div.footer-column
-              ul
-                li
-                  a.footer-link(href="#") Contact Us
+            div#footer-social-media
+              fb:like(send="true",width="450",show_faces="true")
+            div#footer-info-content
+              div.footer-column
+                ul
+                  li
+                    a.footer-link(href="#") About
+              div.footer-column
+                ul
+                  li
+                    a.footer-link(href="#") Facebook
+                  li
+                    a.footer-link(href="#") Twitter
+                  li
+                    a.footer-link(href="#") Blog
+              div.footer-column
+                ul
+                  li
+                    a.footer-link(href="#") Contact Us
+    block scripts
+      script(src='/javascripts/jquery-1.9.1.min.js')
+      script(src='/javascripts/bootstrap.min.js')
+      script
+        $(document).ready(function() {
+          $("#facebook-login").click(login);
+        });
