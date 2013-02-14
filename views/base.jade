@@ -10,6 +10,26 @@ html
       link(rel='stylesheet', href='/stylesheets/bootstrap.min.css') 
       link(rel='stylesheet', href='/stylesheets/main.min.css')
   body
+    div#fb-root
+    script(src='/javascripts/facebook.js')
     block content
     block footer
       footer
+        div.container
+          div#footer-content
+            div.footer-column
+              ul
+                li
+                  a.footer-link(href="#") About
+            div.footer-column
+              ul
+                li
+                  a.footer-link(href="#") Facebook
+                li
+                  a.footer-link(href="#") Twitter
+                li
+                  a.footer-link(href="#") Blog
+            div.footer-column
+              ul
+                li
+                  a.footer-link(href="#") Contact Us

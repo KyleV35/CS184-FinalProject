@@ -1,22 +1,12 @@
+/*Landing*/
+
 @landing-top-padding: 20px;
-@landing-bottom-padding: 20px;
-@landing-background-color: #000000;
+@landing-bottom-padding: 40px;
+@landing-background-color: #63CBF7;
 @landing-background: url("/images/pw_maze_black.png");
 
-#landing {
-    padding-top: @landing-top-padding;
-    padding-bottom:@landing-bottom-padding;
-    background-color: @landing-background-color;
-    background: @landing-background;
-}
-
-@landing-title-color: #8A2BE2;
+@landing-title-color: #000000;
 @landing-title-text-align: center;
-
-.landing-title {
-    color: @landing-title-color;
-    text-align: @landing-title-text-align;
-}
 
 @landing-description-margin-top: 30px;
 @landing-description-margin-bottom: 30px;
@@ -24,6 +14,18 @@
 @landing-description-width: 600px;
 @landing-description-font-size: 20px;
 @landing-description-font-color: #FFFFFF;
+
+#landing {
+    padding-top: @landing-top-padding;
+    padding-bottom:@landing-bottom-padding;
+    background-color: @landing-background-color;
+    /*background: @landing-background;*/
+}
+
+.landing-title {
+    color: @landing-title-color;
+    text-align: @landing-title-text-align;
+}
 
 .landing-description {
     margin: auto;
@@ -35,13 +37,14 @@
     color: @landing-description-font-color;
 }
 
-.center-descendants {
-    text-align:center;
-}
+/* Instructions */
 
-@instructions-background-color: #EEF2DC;
+@instructions-background-color: #69D6FF;
+@instructions-padding: 40px;
 
-@instructions-padding: 20px;
+@instruction-description-width: 100px;
+
+@intruction-image-padding: 15px;
 
 #instructions {
     background-color: @instructions-background-color;
@@ -54,8 +57,60 @@
     margin-left:0;
 }
 
-@instruction-description-width: 60px;
-
 .instruction-description {
+    display: inline-block;
     width: @instruction-description-width;
+    vertical-align:middle;
 }
+
+.instruction-image {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: @intruction-image-padding;
+}
+
+/* Footer */
+
+@footer-content-border: 1px #333333 solid;
+
+@footer-background-color: #006699;
+@footer-padding-top: 20px;
+@footer-padding-bottom: 50px;
+
+@footer-column-width: 250px;
+
+@footer-link-font-color: #69D6FF;
+
+.footer-column {
+    display: inline-block;
+    width: @footer-column-width;
+    vertical-align: top;
+}
+
+#footer-content {
+    margin: auto;
+    display: table;
+    border-top: @footer-content-border;
+}
+
+footer {
+    background-color: @footer-background-color;
+    padding-top: @footer-padding-top;
+    padding-bottom: @footer-padding-bottom;
+}
+
+.footer-link, .footer-link:visited {
+    color: @footer-link-font-color;
+}
+
+/* Misc */
+
+ul {
+    list-style-type:none;
+    margin-left: none;
+}
+
+.center-descendants {
+    text-align:center;
+}
+

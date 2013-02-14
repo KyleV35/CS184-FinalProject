@@ -1,7 +1,13 @@
-#landing{padding-top:20px;padding-bottom:20px;background-color:#000000;background:url("/images/pw_maze_black.png");}
-.landing-title{color:#8a2be2;text-align:center;}
+#landing{padding-top:20px;padding-bottom:40px;background-color:#63cbf7;}
+.landing-title{color:#000000;text-align:center;}
 .landing-description{margin:auto;margin-top:30px;margin-bottom:30px;text-align:center;width:600px;font-size:20px;color:#ffffff;}
-.center-descendants{text-align:center;}
-#instructions{background-color:#eef2dc;padding-top:20px;padding-bottom:20px;}
+#instructions{background-color:#69d6ff;padding-top:40px;padding-bottom:40px;}
 .instruction{text-align:center;margin-left:0;}
-.instruction-description{width:60px;}
+.instruction-description{display:inline-block;width:100px;vertical-align:middle;}
+.instruction-image{display:inline-block;vertical-align:top;padding-right:15px;}
+.footer-column{display:inline-block;width:250px;vertical-align:top;}
+#footer-content{margin:auto;display:table;border-top:1px #333333 solid;}
+footer{background-color:#006699;padding-top:20px;padding-bottom:50px;}
+.footer-link,.footer-link:visited{color:#69d6ff;}
+ul{list-style-type:none;margin-left:none;}
+.center-descendants{text-align:center;}
